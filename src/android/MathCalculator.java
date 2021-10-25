@@ -39,7 +39,7 @@ public class MathCalculator extends CordovaPlugin {
     // }
 
     // added for add 
-    private void add(JSONArray args, CallbackContext callbackContext){
+    private void add(JSONArray args, CallbackContext callback){
         if(args != null) {
             try{
                 int p1 = Integer.paseInt(args.getJSONObject(0).getString("param1"));
@@ -56,7 +56,7 @@ public class MathCalculator extends CordovaPlugin {
 
     }
 
-    private void substract(JSONArray args, CallbackContext callbackContext){
+    private void substract(JSONArray args, CallbackContext callback){
         if(args != null) {
             try{
                 int p1 = Integer.paseInt(args.getJSONObject(0).getString("param1"));
